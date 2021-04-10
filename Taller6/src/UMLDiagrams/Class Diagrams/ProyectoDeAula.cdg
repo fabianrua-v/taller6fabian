@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyectoDeAula">
+  <ClassDiagramComponents>
+    <Class name="Restaurante" package="" visibility="public" xPosition="135.0" yPosition="117.0">
+      <Fields>
+        <Field name="nMesero" type="int" visibility="private"/>
+        <Field name="nPedidos" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="restaurante" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Mesero" package="" visibility="public" xPosition="198.0" yPosition="321.0">
+      <Fields>
+        <Field name="ndocumento" type="double" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="edad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Pedido" package="" visibility="public" xPosition="508.0" yPosition="117.0">
+      <Fields>
+        <Field name="Descripcion" type="String" visibility="private"/>
+        <Field name="Costo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="recibe" source="Restaurante" target="Pedido" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="pertenece" source="Mesero" target="Restaurante" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercico10">
+  <ClassDiagramComponents>
+    <Class name="Vehiculo" package="" visibility="public" xPosition="397.0" yPosition="99.0">
+      <Fields>
+        <Field name="placa" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Alquilado" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AutoBus" package="" visibility="public" xPosition="296.0" yPosition="328.0">
+      <Fields>
+        <Field name="precioPorKM" type="double" visibility="private"/>
+        <Field name="kilometroInicial" type="int" visibility="private"/>
+        <Field name="kilimetroFinal" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Tractor" package="" visibility="public" xPosition="514.0" yPosition="328.0">
+      <Fields>
+        <Field name="PrecioPorDia" type="double" visibility="private"/>
+        <Field name="fechaRenta" type="Date" visibility="private"/>
+        <Field name="FechaDevolucion" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Tractor" target="Vehiculo"/>
+    <IsRelation name="is" source="AutoBus" target="Vehiculo"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

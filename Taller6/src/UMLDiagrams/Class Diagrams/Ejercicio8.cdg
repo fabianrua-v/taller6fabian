@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio8">
+  <ClassDiagramComponents>
+    <Class name="Cliente" package="" visibility="public" xPosition="349.0" yPosition="134.0">
+      <Fields>
+        <Field name="NIF" type="String" visibility="private"/>
+        <Field name="numCuenta" type="String" visibility="private"/>
+        <Field name="saldo" type="Double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ClientePreferente" package="" visibility="public" xPosition="349.0" yPosition="376.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="FondoInversion" package="" visibility="public" xPosition="557.0" yPosition="307.0">
+      <Fields>
+        <Field name="numeroFondo" type="int" visibility="private"/>
+        <Field name="sueldoMensual" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

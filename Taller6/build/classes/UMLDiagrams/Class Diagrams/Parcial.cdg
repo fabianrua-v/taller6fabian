@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Parcial">
+  <ClassDiagramComponents>
+    <Class name="Restaurante" package="" visibility="public" xPosition="271.0" yPosition="165.0">
+      <Fields>
+        <Field name="nMeseros" type="int" visibility="private" isFinal="true"/>
+        <Field name="npedido" type="int" visibility="private"/>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio9">
+  <ClassDiagramComponents>
+    <Class name="Producto" package="" visibility="public" xPosition="334.0" yPosition="109.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Perecedero" package="" visibility="public" xPosition="176.0" yPosition="376.0">
+      <Fields>
+        <Field name="diasAcaducar" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NoPerecedero" package="" visibility="public" xPosition="439.0" yPosition="376.0">
+      <Fields>
+        <Field name="tipo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="NoPerecedero" target="Producto"/>
+    <IsRelation name="is" source="Perecedero" target="Producto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PoyectoAula">
+  <ClassDiagramComponents>
+    <Class name="Expediente" package="" visibility="public" xPosition="256.0" yPosition="267.0">
+      <Fields>
+        <Field name="tipoExpediente" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="MetadatosDocumentos" package="" visibility="public" xPosition="370.0" yPosition="483.0">
+      <Fields>
+        <Field name="nombreDocumento" type="String" visibility="private"/>
+        <Field name="FechaCreacionDocumento" type="String" visibility="private"/>
+        <Field name="fechaIncorporacionExpediente" type="String" visibility="private"/>
+        <Field name="fechaOrdenDocumento" type="String" visibility="private"/>
+        <Field name="numeroPaginaDocumento" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="RadicacionDelProceso" package="" visibility="public" xPosition="29.0" yPosition="267.0">
+      <Fields>
+        <Field name="codigoRadicacion" type="long" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name=" DespachoJudicial" package="" visibility="public" xPosition="535.0" yPosition="191.0">
+      <Fields>
+        <Field name="nombreDespacho" type="String" visibility="private"/>
+        <Field name="codigoDespacho" type="long" visibility="private"/>
+        <Field name="categoria" type="String" visibility="private"/>
+        <Field name="departamento" type="String" visibility="private"/>
+        <Field name="Ciudad" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Login" package="" visibility="public" xPosition="256.0" yPosition="79.0">
+      <Fields>
+        <Field name="Usuario" type="boolean" visibility="private"/>
+        <Field name="Password" type="String" visibility="private"/>
+        <Field name="tipoUsuario" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="PartesProcesales" package="" visibility="public" xPosition="66.0" yPosition="442.0">
+      <Fields>
+        <Field name="TipoPersona" type="String" visibility="private"/>
+        <Field name="nombreAccionado" type="String" visibility="private"/>
+        <Field name="nombreAccionante" type="String" visibility="private"/>
+        <Field name="numeroIdentificacionAccionado" type="long" visibility="private"/>
+        <Field name="numeroIdentificacionAccionante" type="long" visibility="private"/>
+        <Field name="tipoIdentificacionAccionado" type="String" visibility="private"/>
+        <Field name="tipoIdentificacionAccionante" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="pertenece" source=" DespachoJudicial" target="Expediente" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="hace parte" source="RadicacionDelProceso" target="Expediente" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="pertence" source="Expediente" target="MetadatosDocumentos" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="contiene" source="Expediente" target="PartesProcesales" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

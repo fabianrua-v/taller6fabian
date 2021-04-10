@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Programa">
+  <ClassDiagramComponents>
+    <Class name="Restaurante" package="" visibility="public" xPosition="136.0" yPosition="125.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="Apellido" type="String" visibility="private"/>
+        <Field name="Documento" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Pedido" package="" visibility="public" xPosition="136.0" yPosition="366.0">
+      <Fields>
+        <Field name="nMaxPedido" type="int" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Mesero" package="" visibility="public" xPosition="415.0" yPosition="115.0">
+      <Fields>
+        <Field name="Descripcion" type="String" visibility="private"/>
+        <Field name="Precio" type="double" visibility="private"/>
+        <Field name="Sueldo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="CalcularSueldo" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="pertenece" source="Restaurante" target="Mesero" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="pertenece " source="Pedido" target="Restaurante" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

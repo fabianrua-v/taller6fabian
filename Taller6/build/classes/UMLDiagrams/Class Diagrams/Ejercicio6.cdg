@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio6">
+  <ClassDiagramComponents>
+    <Class name="Empleado" package="" visibility="public" xPosition="362.0" yPosition="67.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="Identificacion" type="long" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="EmpleadoAsalariado" package="" visibility="public" xPosition="39.0" yPosition="340.0">
+      <Fields>
+        <Field name="salarioFijo" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="EmpleadoPorComision" package="" visibility="public" xPosition="228.0" yPosition="340.0">
+      <Fields>
+        <Field name="venta" type="double" visibility="private"/>
+        <Field name="porcentajeVenta" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="EmpleadoPorHora" package="" visibility="public" xPosition="425.0" yPosition="340.0">
+      <Fields>
+        <Field name="valorHorasExtra" type="double" visibility="private"/>
+        <Field name="numHoraTrabajada" type="int" visibility="private"/>
+        <Field name="valorHoratrabajada" type="double" visibility="private"/>
+        <Field name="numHoraExtra" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="EmpleadoAsalariadoPorComision" package="" visibility="public" xPosition="628.0" yPosition="340.0">
+      <Fields>
+        <Field name="salarioBase" type="double" visibility="private"/>
+        <Field name="porcentajeVentas" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="EmpleadoPorHora" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoAsalariado" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoPorComision" target="Empleado"/>
+    <IsRelation name="is" source="EmpleadoAsalariadoPorComision" target="Empleado"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

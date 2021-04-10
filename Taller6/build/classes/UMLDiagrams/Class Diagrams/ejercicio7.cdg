@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ejercicio7">
+  <ClassDiagramComponents>
+    <Class name="Vehiculo" package="" visibility="public" xPosition="277.0" yPosition="18.0">
+      <Fields>
+        <Field name="numSerie" type="Int" visibility="private"/>
+        <Field name="Marca" type="String" visibility="private"/>
+        <Field name="anio" type="int" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="AutoDeLujo" package="" visibility="public" xPosition="46.0" yPosition="431.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AutosCompactos" package="" visibility="public" xPosition="411.0" yPosition="431.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vagoneta" package="" visibility="public" xPosition="230.0" yPosition="431.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Camioneta" package="" visibility="public" xPosition="569.0" yPosition="245.0">
+      <Fields>
+        <Field name="capCarga" type="int" visibility="private"/>
+        <Field name="cantEjes" type="int" visibility="private"/>
+        <Field name="cantRodada" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Auto" package="" visibility="public" xPosition="230.0" yPosition="245.0">
+      <Fields>
+        <Field name="cantPasajero" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Camioneta" target="Vehiculo"/>
+    <IsRelation name="is" source="Auto" target="Vehiculo"/>
+    <IsRelation name="is" source="AutosCompactos" target="Auto"/>
+    <IsRelation name="is" source="Vagoneta" target="Auto"/>
+    <IsRelation name="is" source="AutoDeLujo" target="Auto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
